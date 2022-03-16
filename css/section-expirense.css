@@ -1,0 +1,44 @@
+.expirence {
+    width: 50%;
+    height: auto;
+    padding: 30px 0px 20px 0px;
+}
+
+.expirence__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: yellow 0px 4px 15px -5px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+
+.text a {
+    display: inline-block;
+    color: var(--color-text-gold);
+    overflow: hidden;
+    background: linear-gradient(to right, #ffff00, #ffff00 50%, var(--color-text-gold) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    font: normal small-caps bold 1rem/0.8 "Balthazar", serif;
+    text-align: center;
+}
+
+.text a:hover {
+    background-position: 0 100%;
+}
+
+@media (max-width: 999.9px) {
+    .expirence {
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+}

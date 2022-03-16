@@ -1,0 +1,38 @@
+.code {
+    width: 50%;
+    padding: 30px 0px 20px 0px;
+}
+
+.code__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: yellow 0px 4px 15px -5px;
+}
+
+.item__text-code {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 0px 0px 15px;
+    font: normal bold 1.5rem/1.5 "Balthazar", serif;
+    color: var(--color-text-gold); 
+}
+
+.item__code {
+    padding: 0px 0px 0px 15px;
+    font: normal normal 1.2rem/1.4 "Simonetta", cursive;
+    color: var(--color-text-gold);
+    text-align: left;
+
+}
+
+
+@media (max-width: 999.9px) {
+    .code {
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+}
