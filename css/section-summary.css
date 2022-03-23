@@ -1,0 +1,21 @@
+.summary {
+    width: 100%;
+    padding: 30px 0px 70px 0px;
+}
+
+.summary__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: yellow 0px 4px 15px -5px;
+    margin: 0 auto;
+   width: 85%;
+}
+@media (max-width: 999.9px) {
+    .summary {
+        width: 100%;
+        padding: 10px 0px 30px 0px;
+    }
+}

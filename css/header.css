@@ -1,0 +1,223 @@
+.header {
+    width: 100%;
+    height: auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 70px;
+    text-align: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 30px;
+    font: normal small-caps bold 2.5rem/1 "Balthazar", serif;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font: normal small-caps bold 2.5rem/1 "Balthazar", serif;
+}
+
+.nav__link {
+    position: relative;
+    display: inline-block;
+    color: var(--color-text-gold);
+    overflow: hidden;
+    background: linear-gradient(to right, #ffff00, #ffff00 50%, var(--color-text-gold) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.nav__item li a:after {
+    display: block;
+    height: 2px;
+    width: 0%;
+    content: "";
+    background-color: #ffff00;
+    transition: width 0.2s ease-in-out;
+}
+
+.nav__item li a:hover:after,
+.nav__item li a:focus:after {
+    width: 100%;
+}
+
+.nav__link:hover {
+    background-position: 0 100%;
+}
+
+
+@media (max-width: 999.9px) {
+    .nav__link {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__link {
+        color: var(--color-text-black);
+        overflow: hidden;
+        background: linear-gradient(to right, #808080, #808080 50%, var(--color-text-black) 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none;
+        font-size: 3.5vw;
+    }
+
+    .header__inner {
+        height: 20px;
+    }
+
+    .nav__item li a:after {
+        display: none;
+    }
+
+    .nav__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contain {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 55;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 40px;
+        height: 4px;
+        background-color: var(--color-text-gold);
+        margin: 6px 0;
+        transition: 0.2s;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    #navig {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        width: 84%;
+        height: auto;
+        max-height: 0px;
+        overflow: hidden;
+        background: var(--color-text-gold);
+        list-style-type: none;
+        padding-left: 0;
+        transition: linear .3s;
+    }
+
+    .bar.brgcolor {
+        background-color: var(--color-text-black);
+    }
+
+    #navig.open {
+        height: auto;
+        max-height: 500px;
+        transition: linear .3s;
+    }
+
+    #navig li {
+        float: none;
+        text-align: left;
+        text-decoration: none;
+        width: 100%;
+        margin: 0;
+        transition: linear .3s;
+    }
+
+    #navig li a {
+        display: block;
+        margin: 0;
+        padding: 11.5px 10px;
+        text-decoration: none;
+        border-bottom: 1px solid #000000;
+        transition: linear .3s;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    #navig li a {
+        padding: 9px 10px;
+        border-bottom: none;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 2px;
+    }
+
+    #navig {
+        width: 100%;
+    }
+
+    #navig li {
+        text-align: center;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 4px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    .nav__link {
+        font-size: 3vw;
+    }
+
+
+}

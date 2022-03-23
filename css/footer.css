@@ -1,0 +1,71 @@
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+.footer__foto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    height: 120px;
+    padding: 0px 30px;
+}
+.foto__github {
+    width:90px;
+    height: 90px;
+}
+.footer__text {
+    font: normal small-caps bold 2rem/1 "Balthazar", serif;
+    color: var(--color-text-gold);
+    text-align: center;
+}
+.foto__rss {
+    width:110px;
+    height: 90px;
+}
+
+@media (max-width: 999.9px) {
+    .footer__text {
+        font: normal small-caps bold 2vw/1 "Balthazar", serif;
+    }
+    .foto__rss {
+        width:90px;
+        height: 70px;
+    }
+    .foto__github {
+        width:70px;
+        height: 60px;
+    }
+    .footer__foto {
+        height: 90px;
+    }
+}
+@media (max-width:480px) {
+    .foto__rss {
+        width:70px;
+        height: 60px;
+    }
+    .foto__github {
+        width:60px;
+        height: 50px;
+    }
+    .footer__foto {
+        height: 70px;
+    }
+}
+
+@media (max-width:320px) {
+    .foto__rss {
+        width:60px;
+        height: 50px;
+    }
+    .foto__github {
+        width:50px;
+        height: 40px;
+    }
+    .footer__foto {
+        height: 60px;
+    }
+}
