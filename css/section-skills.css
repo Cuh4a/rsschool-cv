@@ -1,0 +1,132 @@
+.skills {
+    width: 50%;
+    padding: 30px 0px 20px 0px;
+}
+
+.skills__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: yellow 0px 4px 15px -5px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.item__skill {
+    display: block;
+}
+
+.skill__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__skill {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.sklill__text {
+    font: normal bold 1.3rem/1 "Balthazar", serif;
+    color: var(--color-text-gold);
+    margin-bottom: -15px;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+.circle:after {
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    display: block;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    content: "";
+    background-color: var(--bg-color-black);
+}
+
+.cr1 {
+    background-image: linear-gradient(290deg, transparent 50%, #ff4500 50%),
+        linear-gradient(180deg, var(--color-text-gold) 50%, #ff4500 50%);
+}
+
+.cr2 {
+    background-image: linear-gradient(280deg, transparent 50%, #ff4500 50%),
+        linear-gradient(190deg, var(--color-text-gold) 50%, #ff4500 50%);
+}
+
+.cr3 {
+    background-image: linear-gradient(90deg, #ff4500 50%, var(--color-text-gold) 50%);
+}
+
+.cr4 {
+    background-image: linear-gradient(-30deg, #ff4500 50%, var(--color-text-gold) 50%);
+}
+
+.cr5 {
+    background-image: linear-gradient(230deg, transparent 50%, #ff4500 50%),
+        linear-gradient(180deg, var(--color-text-gold) 50%, #ff4500 50%);
+}
+
+.cr6 {
+    background-image: linear-gradient(90deg, #ff4500 50%, var(--color-text-gold) 50%);
+}
+
+.skill__img {
+    position: absolute;
+    z-index: 1;
+    left: 1.3em;
+    top: 1.5em;
+    height: 3.5em;
+    width: 3.5em;
+}
+
+
+@media (max-width: 999.9px) {
+    .skills {
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+}
+
+@media (max-width:480px) {
+    .circle {
+        margin: 0.6em;
+        width: 4em;
+        height: 4em;
+    }
+
+    .circle:after {
+        left: .5em;
+        top: .5em;
+        height: 3em;
+        width: 3em;
+    }
+
+    .skill__img {
+        left: 1em;
+        top: 1.1em;
+        height: 2em;
+        width: 2em;
+    }
+
+    .sklill__text {
+        font: normal bold 1rem/1 "Balthazar", serif;
+        margin-bottom: 0px;
+    }
+}

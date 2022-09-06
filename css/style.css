@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+@import url(header.css);
+@import url(section-profile.css);
+@import url(section-expirense.css);
+@import url(section-education.css);
+@import url(section-contacts.css);
+@import url(section-skills.css);
+@import url(section-projects.css);
+@import url(section-code.css);
+@import url(section-summary.css);
+@import url(footer.css);
+
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: "Balthazar", serif;
+    font-family: "Simonetta", cursive;
+    color: var(--bg-color-white);
+    background-color: var(--bg-color-black);
+}
+
+:root {
+    --color-text-white: #fff;
+    --color-text-black: #000000;
+    --color-text-gold: #ffd700;
+    --color-title-gold: #ffd700;
+    --color-title-white: #fff;
+    --color-subtitle-gold: #ffd700;
+    --color-subtitle-white: #fff;
+    --bg-color-black: #000000;
+    --bg-color-white: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--bg-color-black);
+}
+
+.mainly {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.wrapper__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    width: 95%;
+    margin-top: 50px;
+    border-radius: 25px;
+    box-shadow: yellow 0px 4px 15px -5px;
+}
+
+.subtitle {
+    text-shadow: shadow1, shadow2, shadow3;
+    text-shadow: 4px 3px 0px #ff4500, 9px 8px 0px rgba(0, 0, 0, 0.15);
+    font: normal bold 2rem/2 "Simonetta", cursive;
+    color: var(--color-text-gold);
+    text-align: center;
+}
+
+
+.item__text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    font: normal bold 1.2rem/1.5 "Balthazar", serif;
+    color: var(--color-text-gold);
+    width: 95%;
+    text-align: left;
+    padding: 0px 0px 5px 10px;
+}
+
+@media (max-width:480px) {
+    .subtitle {
+        font: normal bold 1.5rem/1.5 "Simonetta", cursive;
+        text-shadow: 2px 1px 0px #ff4500, 7px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    html,
+    body {
+        line-height: 1;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:320px) {
+    .subtitle {
+        font: normal bold 1rem/1.5 "Simonetta", cursive;
+        text-shadow: 2px 1px 0px #ff4500, 7px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    html,
+    body {
+        line-height: 1;
+        font-size: 8px;
+    }
+}
